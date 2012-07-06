@@ -6,3 +6,5 @@ while x < 1000 do
   x += 1
 end
 puts total
+
+# Pretty simple program - just keeps a total and adds each number in sequence.
