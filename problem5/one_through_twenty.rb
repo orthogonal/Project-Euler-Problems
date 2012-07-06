@@ -1,5 +1,6 @@
 # What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20? #
 
+startTime = Time.now
 x = 9699690
 n = 1
 catch (:foundit) do
@@ -20,6 +21,7 @@ catch (:foundit) do
     end
   end
 end
+puts (Time.now - startTime)
 
 # The only thing clever here is that it has to involve all the primes.
 # So it must be divisible by all of them, and therefore by 2 * 3 * 5 * 7 * 11 * 13 * 17 * 19 = 9699690    

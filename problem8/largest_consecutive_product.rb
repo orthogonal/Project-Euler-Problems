@@ -21,6 +21,7 @@ x = "73167176531330624919225119674426574742355349194934
 05886116467109405077541002256983155200055935729725
 71636269561882670428252483600823257530420752963450".gsub("\n", "")
 
+startTime = Time.now
 start = 0
 largest = 0
 while ((start + 4) <= x.length) do
@@ -30,6 +31,7 @@ while ((start + 4) <= x.length) do
 end
 
 puts "The largest consecutive product is #{largest}"
+puts (Time.now - startTime)
 
 # There's probably a cleverer algorithm to do this than the one I used, like the KMP algorithm but for integers?  Anyway, 
 # this brute-force-ish way of doing it took less than three milliseconds, so it's all good.  gsub is a Ruby function that

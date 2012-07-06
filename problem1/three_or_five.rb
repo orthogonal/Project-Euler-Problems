@@ -1,4 +1,5 @@
 # Add all the natural numbers below one thousand that are multiples of 3 or 5. #
+startTime = Time.now
 x = 1
 total = 0
 while x < 1000 do
@@ -6,5 +7,6 @@ while x < 1000 do
   x += 1
 end
 puts total
+puts (Time.now - startTime)
 
 # Pretty simple program - just keeps a total and adds each number in sequence.

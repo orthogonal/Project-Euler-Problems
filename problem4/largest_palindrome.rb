@@ -1,4 +1,5 @@
 # A palindromic number reads the same both ways.  Find the largest palindrome made from the product of two 3-digit numbers. #
+startTime = Time.now
 def check_palindrome(num)
   num = num.to_s
   i = 0
@@ -27,6 +28,7 @@ while (a < 1000) do
   a += 1
 end
 puts "The largest palindrome is #{largest}"
+puts (Time.now - startTime)
 
 # This is the brute-force way of doing it, and fortunately for this problem it worked in about slightly over one second.  
 # To check if a number is a palindrome, turn it into a string, and then compare each pair of characters against each other.

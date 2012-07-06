@@ -1,4 +1,5 @@
 # Find the 10,001st prime #
+startTime = Time.now
 include Math
 limit = 200000
 numbers = []
@@ -20,6 +21,7 @@ while (i <= sqrt) do
 end
 numbers.compact!
 puts "There are #{numbers.length} primes <= #{limit}, and the 10,0001st one is #{(numbers[10002] ? numbers[10002] : "non-existant")}"
+puts (Time.now - startTime)
     
 # The key here is using the Ruby .compact! method, which compresses an array by removing all nil elements.  Then I use the sieve
 # of Eratosthenes, changing all the composite elements to nil.  The array is indexed so that numbers[1] = 1, etc.  At the end of

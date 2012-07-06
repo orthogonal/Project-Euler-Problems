@@ -1,4 +1,5 @@
 # What is the largest prime factor of the number 600851475143 ? #
+startTime = Time.now
 include Math
 low_factors = []
 high_factors = []
@@ -36,6 +37,7 @@ catch (:foundit) do
     end
   end
 end
+puts (Time.now - startTime)
   
 # I made two sets of factors - the high ones and the low ones.  This made it easy to sort the factors in reverse order, so that
 # as soon as I found one that was prime, I would know it was the largest prime factor.  The throw-catch structure in the second
