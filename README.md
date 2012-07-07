@@ -15,4 +15,7 @@ Problem 8:  7/6/2012  0.003162 s<br />
 Problem 9:  7/6/2012  0.016369 s<br />
 Problem 10:  7/6/2012  2.968133 s<br />
 Problem 11:  7/6/2012  0.001152 s<br />
+Problem 12: <br />
+Problem 13:  7/6/2012  0.000401 s<br />
+Problem 14:  7/6/2012  3.64082 s<br />
 
